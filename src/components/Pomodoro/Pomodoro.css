@@ -1,0 +1,86 @@
+.pomodoro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #6425fe;
+  margin-bottom: 20px;
+}
+
+.timer-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.circle-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6425fe;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.35s;
+  transform-origin: 50% 50%;
+  stroke: white;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.timer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 6px 6px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6425fe;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* button:hover {
+  background-color: #5b52e1;
+}
+
+button:active {
+  background-color: #473dce;
+} */

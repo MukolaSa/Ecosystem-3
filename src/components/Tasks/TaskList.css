@@ -1,0 +1,159 @@
+.task-list {
+  width: 380px;
+  height: 374px;
+  border-radius: 10px;
+  overflow-y: scroll; /* Дозволяємо прокручування */
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+
+  /* Приховуємо скролбар для Chrome, Safari та інших браузерів на WebKit */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer та старі Edge */
+}
+
+/* Приховуємо скролбар для Chrome, Safari та інших браузерів на WebKit */
+.task-list::-webkit-scrollbar {
+  display: none;
+}
+
+
+.task-status.completed {
+  color: #28a745; /* Зелена галочка для виконаних завдань */
+}
+
+.task-status {
+  color: #ff0000; /* Червоний хрестик для невиконаних завдань */
+}
+
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-header h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.task-header span {
+  color: #b5b5b5;
+}
+
+.add-task-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.add-task {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-task-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-task-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.save-task_1 {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 7px 11px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-task {
+  background-color: #6425FE;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-task {
+  background-color: #6425FE;
+  border: none;
+  color: white;
+  padding: 7px 11px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+} */
+
+li.completed .task-text {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+
+
+.task-number {
+  color: #888;
+}
+
+.task-text {
+  flex: 1;
+  margin-left: 15px;
+  word-wrap: break-word; /* Розриває довгі слова на нові рядки */
+  word-break: break-word; /* Дозволяє перенесення слів */
+  white-space: normal; /* Забезпечує нормальне перенесення рядків */
+}
+
+
+.task-status {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.task-status.completed {
+  color: #28a745; /* Зелена галочка */
+}
+
+p {
+  text-align: center;
+  color: #999;
+  margin-top: 20px;
+}
